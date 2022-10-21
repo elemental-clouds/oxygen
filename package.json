@@ -68,7 +68,7 @@
     "url": "git+https://github.com/elemental-clouds/oxygen.git"
   },
   "scripts": {
-    "build": "rm -rf ./build && --project tsconfig.build.json && cp package.json ./build && cp ./README.md ./build && cp ./.npmignore ./build",
+    "build": "rm -rf ./build && tsc --project tsconfig.build.json && cp package.json ./build && cp ./README.md ./build && cp ./.npmignore ./build",
     "docs": "rm -rf .docs/ && typedoc",
     "format": "npx prettier --check ./",
     "lint": "eslint . --ext .ts"
