@@ -4,7 +4,7 @@ Cloud secure configuration control library
 
 ## Usage
 
-Use the controls in this library the [Titanium](https://github.com/elemental-clouds/titanium) control engine to validate your cloud infrastructure configuration.
+Use the controls in this library with the [Titanium](https://github.com/elemental-clouds/titanium) control engine to validate your cloud infrastructure configuration.
 
 ```typescript
 import engine from '@elemental-clouds/titanium';
@@ -38,53 +38,8 @@ import engine from '@elemental-clouds/titanium';
     },
   ];
 
-  console.log(JSON.stringify(engine(item, procedure), null, 2));
+  const status = engine(item, procedure);
 
-  // {
-  //   "compliant": [
-  //     {
-  //       "action": "$includes",
-  //       "map": {
-  //         "attributes": {
-  //           "publicAccessBlocks": {
-  //             "BlockPublicAcls": true
-  //           }
-  //         }
-  //       },
-  //       "result": "COMPLIANT"
-  //     }
-  //   ],
-  //   "controlProcedure": [
-  //     {
-  //       "$includes": [
-  //         {
-  //           "attributes": {
-  //             "publicAccessBlocks": {
-  //               "BlockPublicAcls": true
-  //             }
-  //           }
-  //         }
-  //       ]
-  //     }
-  //   ],
-  //   "item": {
-  //     "urn": "urn:os-76:os-184:0.4.5:12345678101:S3::osmium",
-  //     "attributes": {
-  //       "bucket": {
-  //         "Name": "osmium",
-  //         "CreationDate": "1970-01-01T00:00:00.000Z"
-  //       },
-  //       "publicAccessBlocks": {
-  //         "BlockPublicAcls": true,
-  //         "IgnorePublicAcls": true,
-  //         "BlockPublicPolicy": true,
-  //         "RestrictPublicBuckets": true
-  //       }
-  //     }
-  //   },
-  //   "nonCompliant": [],
-  //   "result": "COMPLIANT",
-  //   "skipped": []
-  // }
+  console.log(status.result); // COMPLIANT
 })();
 ```

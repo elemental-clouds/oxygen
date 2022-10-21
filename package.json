@@ -4,7 +4,9 @@
     "url": "https://github.com/elemental-clouds/oxygen/issues"
   },
   "dependencies": {
-    "@elemental-clouds/hydrogen": "^0.0.6"
+    "@elemental-clouds/hydrogen": "^0.0.6",
+    "typedoc": "^0.23.17",
+    "typedoc-theme-hierarchy": "^3.0.0"
   },
   "description": "",
   "devDependencies": {
@@ -66,7 +68,8 @@
     "url": "git+https://github.com/elemental-clouds/oxygen.git"
   },
   "scripts": {
-    "build": "rm -rf ./build && tsc && cp package.json ./build && cp ./README.md ./build && cp ./.npmignore ./build",
+    "build": "rm -rf ./build && --project tsconfig.build.json && cp package.json ./build && cp ./README.md ./build && cp ./.npmignore ./build",
+    "docs": "rm -rf .docs/ && typedoc",
     "format": "npx prettier --check ./",
     "lint": "eslint . --ext .ts"
   },

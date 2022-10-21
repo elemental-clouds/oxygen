@@ -1,0 +1,19 @@
+{
+  "basePath": "./src",
+  "entryPointStrategy": "expand",
+  "entryPoints": ["./src"],
+  "exclude": ["**/*+(test).ts"],
+  "hideGenerator": true,
+  "includeVersion": true,
+  "out": ".docs",
+  "plugin": ["typedoc-theme-hierarchy"],
+  "sort": ["alphabetical", "kind", "instance-first"],
+  "theme": "hierarchy",
+  "tsconfig": "tsconfig.build.json",
+  "visibilityFilters": {
+    "external": true,
+    "inherited": true,
+    "private": false,
+    "protected": false
+  }
+}
