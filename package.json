@@ -57,6 +57,7 @@
   "homepage": "https://github.com/lstatro/oxygen#readme",
   "keywords": [],
   "license": "MIT",
+  "main": "index.js",
   "name": "@elemental-clouds/oxygen",
   "prettier": {
     "arrowParens": "avoid",

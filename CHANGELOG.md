@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- added a main export to the package.json
 - added s3 controls
 - added kms control
 - created typedoc documentation
