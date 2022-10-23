@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [0.1.0] - 2022-10-22
+## [0.1.1] - 2022-10-23
 
 ### Changed
 
@@ -16,7 +16,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
-- Controls did not conform to `ControlProcedure` updated them to following the interface definition
+- Controls did not conform to `ControlProcedure` updated them to follow the interface definition
 
 ## [0.1.0] - 2022-10-22
 
