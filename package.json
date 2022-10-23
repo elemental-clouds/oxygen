@@ -72,5 +72,9 @@
     "format": "npx prettier --check ./",
     "lint": "eslint . --ext .ts"
   },
+<<<<<<< HEAD
   "version": "0.1.1"
+=======
+  "version": "0.1.0"
+>>>>>>> 60bcd5fee6a6e7dbc28821350ed36dd19430f8be
 }
