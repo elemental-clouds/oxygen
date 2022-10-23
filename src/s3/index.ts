@@ -1,20 +1,24 @@
+import { ControlProcedure } from '@elemental-clouds/hydrogen/Common';
+
 /**
  * @module S3 Compliance
  * @example 
 ```typescript
 // Ensure all blocks are enabled
-export const publicAccessBlocks = [
+export const publicAccessBlocks: ControlProcedure = [
   {
-    $includes: {
-      attributes: {
-        publicAccessBlocks: {
-          BlockPublicAcls: true,
-          IgnorePublicAcls: true,
-          BlockPublicPolicy: true,
-          RestrictPublicBuckets: true,
+    $includes: [
+      {
+        attributes: {
+          publicAccessBlocks: {
+            BlockPublicAcls: true,
+            IgnorePublicAcls: true,
+            BlockPublicPolicy: true,
+            RestrictPublicBuckets: true,
+          },
         },
       },
-    },
+    ],
   },
 ];
 ```
@@ -24,34 +28,38 @@ export const publicAccessBlocks = [
  * ensures all public access blocks are enabled
  * @example
 ```typescript
-export const publicAccessBlocks = [
+export const publicAccessBlocks: ControlProcedure = [
   {
-    $includes: {
-      attributes: {
-        publicAccessBlocks: {
-          BlockPublicAcls: true,
-          IgnorePublicAcls: true,
-          BlockPublicPolicy: true,
-          RestrictPublicBuckets: true,
+    $includes: [
+      {
+        attributes: {
+          publicAccessBlocks: {
+            BlockPublicAcls: true,
+            IgnorePublicAcls: true,
+            BlockPublicPolicy: true,
+            RestrictPublicBuckets: true,
+          },
         },
       },
-    },
+    ],
   },
 ];
 ```
  */
-export const publicAccessBlocks = [
+export const publicAccessBlocks: ControlProcedure = [
   {
-    $includes: {
-      attributes: {
-        publicAccessBlocks: {
-          BlockPublicAcls: true,
-          IgnorePublicAcls: true,
-          BlockPublicPolicy: true,
-          RestrictPublicBuckets: true,
+    $includes: [
+      {
+        attributes: {
+          publicAccessBlocks: {
+            BlockPublicAcls: true,
+            IgnorePublicAcls: true,
+            BlockPublicPolicy: true,
+            RestrictPublicBuckets: true,
+          },
         },
       },
-    },
+    ],
   },
 ];
 
@@ -59,28 +67,32 @@ export const publicAccessBlocks = [
  * ensures only BlockPublicAcls is enabled
  * @example
  ```typescript
-export const blockPublicAcls = [
+export const blockPublicAcls: ControlProcedure = [
   {
-    $includes: {
-      attributes: {
-        publicAccessBlocks: {
-          BlockPublicAcls: true,
+    $includes: [
+      {
+        attributes: {
+          publicAccessBlocks: {
+            BlockPublicAcls: true,
+          },
         },
       },
-    },
+    ],
   },
 ];
  ```
  */
-export const blockPublicAcls = [
+export const blockPublicAcls: ControlProcedure = [
   {
-    $includes: {
-      attributes: {
-        publicAccessBlocks: {
-          BlockPublicAcls: true,
+    $includes: [
+      {
+        attributes: {
+          publicAccessBlocks: {
+            BlockPublicAcls: true,
+          },
         },
       },
-    },
+    ],
   },
 ];
 
@@ -88,28 +100,32 @@ export const blockPublicAcls = [
  * ensures only IgnorePublicAcls is enabled
  * @example
 ```typescript
-export const ignorePublicAcls = [
+export const ignorePublicAcls: ControlProcedure = [
   {
-    $includes: {
-      attributes: {
-        publicAccessBlocks: {
-          IgnorePublicAcls: true,
+    $includes: [
+      {
+        attributes: {
+          publicAccessBlocks: {
+            IgnorePublicAcls: true,
+          },
         },
       },
-    },
+    ],
   },
 ];
 ```
  */
-export const ignorePublicAcls = [
+export const ignorePublicAcls: ControlProcedure = [
   {
-    $includes: {
-      attributes: {
-        publicAccessBlocks: {
-          IgnorePublicAcls: true,
+    $includes: [
+      {
+        attributes: {
+          publicAccessBlocks: {
+            IgnorePublicAcls: true,
+          },
         },
       },
-    },
+    ],
   },
 ];
 
@@ -117,28 +133,32 @@ export const ignorePublicAcls = [
  * ensures only BlockPublicPolicy is enabled
  * @example
 ```typescript
-export const blockPublicPolicy = [
+export const blockPublicPolicy: ControlProcedure = [
   {
-    $includes: {
-      attributes: {
-        publicAccessBlocks: {
-          BlockPublicPolicy: true,
+    $includes: [
+      {
+        attributes: {
+          publicAccessBlocks: {
+            BlockPublicPolicy: true,
+          },
         },
       },
-    },
+    ],
   },
 ];
 ```
  */
-export const blockPublicPolicy = [
+export const blockPublicPolicy: ControlProcedure = [
   {
-    $includes: {
-      attributes: {
-        publicAccessBlocks: {
-          BlockPublicPolicy: true,
+    $includes: [
+      {
+        attributes: {
+          publicAccessBlocks: {
+            BlockPublicPolicy: true,
+          },
         },
       },
-    },
+    ],
   },
 ];
 
@@ -146,27 +166,31 @@ export const blockPublicPolicy = [
  * ensures only restrictPublicBuckets is enabled
  * @example
 ```typescript
-export const restrictPublicBuckets = [
+export const restrictPublicBuckets: ControlProcedure = [
   {
-    $includes: {
-      attributes: {
-        publicAccessBlocks: {
-          RestrictPublicBuckets: true,
+    $includes: [
+      {
+        attributes: {
+          publicAccessBlocks: {
+            RestrictPublicBuckets: true,
+          },
         },
       },
-    },
+    ],
   },
 ];
 ```
  */
-export const restrictPublicBuckets = [
+export const restrictPublicBuckets: ControlProcedure = [
   {
-    $includes: {
-      attributes: {
-        publicAccessBlocks: {
-          RestrictPublicBuckets: true,
+    $includes: [
+      {
+        attributes: {
+          publicAccessBlocks: {
+            RestrictPublicBuckets: true,
+          },
         },
       },
-    },
+    ],
   },
 ];

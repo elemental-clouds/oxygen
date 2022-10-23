@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.1] - 2022-10-23
+
+### Changed
+
+- Update Hydrogen types
+- Cast controls under the `ControlProcedure` type
+
+### Fixed
+
+- Controls did not conform to `ControlProcedure` updated them to follow the interface definition
+
 ## [0.1.0] - 2022-10-22
 
 ### Added
