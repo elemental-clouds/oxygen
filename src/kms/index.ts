@@ -6,26 +6,31 @@ import { ControlProcedure } from '@elemental-clouds/hydrogen/Common';
 ```typescript
 // If the KMS key is CUSTOMER managed ensure
 // that rotation is enabled otherwise skip it.
-export const keyRotationEnabled: ControlProcedure = [
-  {
-    $if_includes: [
-      {
-        attributes: {
-          keyMetaData: {
-            KeyManager: 'CUSTOMER',
+export const keyRotationEnabled: ControlProcedure = {
+  description:
+    'If the KMS key is CUSTOMER managed ensure that rotation is enabled otherwise skip it.',
+  name: 'keyRotationEnabled',
+  procedure: [
+    {
+      $if_includes: [
+        {
+          attributes: {
+            keyMetaData: {
+              KeyManager: 'CUSTOMER',
+            },
           },
         },
-      },
-    ],
-    $includes: [
-      {
-        attributes: {
-          keyRotationEnabled: true,
+      ],
+      $includes: [
+        {
+          attributes: {
+            keyRotationEnabled: true,
+          },
         },
-      },
-    ],
-  },
-];
+      ],
+    },
+  ],
+};
 ```
  */
 
@@ -34,45 +39,55 @@ export const keyRotationEnabled: ControlProcedure = [
 ```typescript
 // If the KMS key is CUSTOMER managed ensure
 // that rotation is enabled otherwise skip it.
-export const keyRotationEnabled: ControlProcedure = [
-  {
-    $if_includes: [
-      {
-        attributes: {
-          keyMetaData: {
-            KeyManager: 'CUSTOMER',
+export const keyRotationEnabled: ControlProcedure = {
+  description:
+    'If the KMS key is CUSTOMER managed ensure that rotation is enabled otherwise skip it.',
+  name: 'keyRotationEnabled',
+  procedure: [
+    {
+      $if_includes: [
+        {
+          attributes: {
+            keyMetaData: {
+              KeyManager: 'CUSTOMER',
+            },
           },
         },
-      },
-    ],
-    $includes: [
-      {
-        attributes: {
-          keyRotationEnabled: true,
+      ],
+      $includes: [
+        {
+          attributes: {
+            keyRotationEnabled: true,
+          },
         },
-      },
-    ],
-  },
-];
+      ],
+    },
+  ],
+};
 ```
  */
-export const keyRotationEnabled: ControlProcedure = [
-  {
-    $if_includes: [
-      {
-        attributes: {
-          keyMetaData: {
-            KeyManager: 'CUSTOMER',
+export const keyRotationEnabled: ControlProcedure = {
+  description:
+    'If the KMS key is CUSTOMER managed ensure that rotation is enabled otherwise skip it.',
+  name: 'keyRotationEnabled',
+  procedure: [
+    {
+      $if_includes: [
+        {
+          attributes: {
+            keyMetaData: {
+              KeyManager: 'CUSTOMER',
+            },
           },
         },
-      },
-    ],
-    $includes: [
-      {
-        attributes: {
-          keyRotationEnabled: true,
+      ],
+      $includes: [
+        {
+          attributes: {
+            keyRotationEnabled: true,
+          },
         },
-      },
-    ],
-  },
-];
+      ],
+    },
+  ],
+};

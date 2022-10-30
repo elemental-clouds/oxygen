@@ -5,7 +5,7 @@
   },
   "description": "",
   "devDependencies": {
-    "@elemental-clouds/hydrogen": "^0.0.7",
+    "@elemental-clouds/hydrogen": "^0.0.9",
     "@elemental-clouds/titanium": "^0.0.2",
     "@typescript-eslint/eslint-plugin": "^5.37.0",
     "eslint": "^8.23.1",
@@ -72,5 +72,5 @@
     "format": "npx prettier --check ./",
     "lint": "eslint . --ext .ts"
   },
-  "version": "0.1.1"
+  "version": "0.1.2"
 }
