@@ -5,15 +5,15 @@ import { ControlProcedure } from '@elemental-clouds/hydrogen/Common';
  * @example 
 ```typescript
 // Ensure all blocks are enabled
-export const publicAccessBlocks: ControlProcedure = {
+export const PublicAccessBlockConfiguration: ControlProcedure = {
   description: 'ensures all public access blocks are enabled',
-  name: 'publicAccessBlocks',
+  name: 'PublicAccessBlockConfiguration',
   procedure: [
     {
       $includes: [
         {
           attributes: {
-            publicAccessBlocks: {
+            PublicAccessBlockConfiguration: {
               BlockPublicAcls: true,
               IgnorePublicAcls: true,
               BlockPublicPolicy: true,
@@ -31,15 +31,15 @@ export const publicAccessBlocks: ControlProcedure = {
  * ensures all public access blocks are enabled
  * @example
 ```typescript
-export const publicAccessBlocks: ControlProcedure = {
+export const PublicAccessBlockConfiguration: ControlProcedure = {
   description: 'ensures all public access blocks are enabled',
-  name: 'publicAccessBlocks',
+  name: 'PublicAccessBlockConfiguration',
   procedure: [
     {
       $includes: [
         {
           attributes: {
-            publicAccessBlocks: {
+            PublicAccessBlockConfiguration: {
               BlockPublicAcls: true,
               IgnorePublicAcls: true,
               BlockPublicPolicy: true,
@@ -52,15 +52,15 @@ export const publicAccessBlocks: ControlProcedure = {
   ],
 ```
  */
-export const publicAccessBlocks: ControlProcedure = {
+export const PublicAccessBlockConfiguration: ControlProcedure = {
   description: 'ensures all public access blocks are enabled',
-  name: 'publicAccessBlocks',
+  name: 'PublicAccessBlockConfiguration',
   procedure: [
     {
       $includes: [
         {
           attributes: {
-            publicAccessBlocks: {
+            PublicAccessBlockConfiguration: {
               BlockPublicAcls: true,
               IgnorePublicAcls: true,
               BlockPublicPolicy: true,
@@ -85,7 +85,7 @@ export const blockPublicAcls: ControlProcedure = {
       $includes: [
         {
           attributes: {
-            publicAccessBlocks: {
+            PublicAccessBlockConfiguration: {
               BlockPublicAcls: true,
             },
           },
@@ -104,7 +104,7 @@ export const blockPublicAcls: ControlProcedure = {
       $includes: [
         {
           attributes: {
-            publicAccessBlocks: {
+            PublicAccessBlockConfiguration: {
               BlockPublicAcls: true,
             },
           },
@@ -125,7 +125,7 @@ export const ignorePublicAcls: ControlProcedure = {
       $includes: [
         {
           attributes: {
-            publicAccessBlocks: {
+            PublicAccessBlockConfiguration: {
               IgnorePublicAcls: true,
             },
           },
@@ -144,7 +144,7 @@ export const ignorePublicAcls: ControlProcedure = {
       $includes: [
         {
           attributes: {
-            publicAccessBlocks: {
+            PublicAccessBlockConfiguration: {
               IgnorePublicAcls: true,
             },
           },
@@ -166,7 +166,7 @@ export const blockPublicPolicy: ControlProcedure = {
       $includes: [
         {
           attributes: {
-            publicAccessBlocks: {
+            PublicAccessBlockConfiguration: {
               BlockPublicPolicy: true,
             },
           },
@@ -185,7 +185,7 @@ export const blockPublicPolicy: ControlProcedure = {
       $includes: [
         {
           attributes: {
-            publicAccessBlocks: {
+            PublicAccessBlockConfiguration: {
               BlockPublicPolicy: true,
             },
           },
@@ -207,7 +207,7 @@ export const restrictPublicBuckets: ControlProcedure = {
       $includes: [
         {
           attributes: {
-            publicAccessBlocks: {
+            PublicAccessBlockConfiguration: {
               RestrictPublicBuckets: true,
             },
           },
@@ -227,7 +227,7 @@ export const restrictPublicBuckets: ControlProcedure = {
       $includes: [
         {
           attributes: {
-            publicAccessBlocks: {
+            PublicAccessBlockConfiguration: {
               RestrictPublicBuckets: true,
             },
           },
