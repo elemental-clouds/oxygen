@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.4] - 2022-11-25
+
+### Changed
+
+- The `PublicAccessBlockConfiguration` should represent itself as be `publicAccessBlockConfiguration`
+- `v0.1.3` build did not include control names
+
 ## [0.1.3] - 2022-11-06
 
 ### Changed

@@ -5,9 +5,9 @@ import { ControlProcedure } from '@elemental-clouds/hydrogen/Common';
  * @example 
 ```typescript
 // Ensure all blocks are enabled
-export const PublicAccessBlockConfiguration: ControlProcedure = {
+export const publicAccessBlockConfiguration: ControlProcedure = {
   description: 'ensures all public access blocks are enabled',
-  name: 'PublicAccessBlockConfiguration',
+  name: 'publicAccessBlockConfiguration',
   procedure: [
     {
       $includes: [
@@ -31,9 +31,9 @@ export const PublicAccessBlockConfiguration: ControlProcedure = {
  * ensures all public access blocks are enabled
  * @example
 ```typescript
-export const PublicAccessBlockConfiguration: ControlProcedure = {
+export const publicAccessBlockConfiguration: ControlProcedure = {
   description: 'ensures all public access blocks are enabled',
-  name: 'PublicAccessBlockConfiguration',
+  name: 'publicAccessBlockConfiguration',
   procedure: [
     {
       $includes: [
@@ -52,9 +52,9 @@ export const PublicAccessBlockConfiguration: ControlProcedure = {
   ],
 ```
  */
-export const PublicAccessBlockConfiguration: ControlProcedure = {
+export const publicAccessBlockConfiguration: ControlProcedure = {
   description: 'ensures all public access blocks are enabled',
-  name: 'PublicAccessBlockConfiguration',
+  name: 'publicAccessBlockConfiguration',
   procedure: [
     {
       $includes: [
